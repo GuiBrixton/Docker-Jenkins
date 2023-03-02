@@ -6,6 +6,7 @@ services:
     image: "jenkinsci/blueocean:1.23.1"
     ports:
       - "8080:8080"
+      - "50000:50000"
     volumes:
       - ./jenkins_home:/var/jenkins_home
       - /usr/local/bin/docker:/usr/bin/docker
